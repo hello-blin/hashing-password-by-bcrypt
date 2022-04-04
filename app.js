@@ -1,4 +1,4 @@
-const bcrypt = require("bcrypt"); //Here you import bcrypt
+const bcrypt = require("bcrypt"); //Here you import and require bcrypt
 
 async function hashPassword() {
   let salt = await bcrypt.genSalt(10); //A salt is a random string that makes the hash unpredictable. This bcrypt method generates it and randomizes
